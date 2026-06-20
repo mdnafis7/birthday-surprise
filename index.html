@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Tell me this is not the cutest surprise everrrrr</h1>
+
+<div id="passcodePage" class="card">
+    <h2>Enter Passcode</h2>
+    <input type="password" id="passcode" maxlength="4">
+    <button onclick="checkPass()">Open</button>
+</div>
+
+<div id="page1" class="card hidden">
+    <h2>Our Memories ❤️</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+        <img src="images/photo4.jpg">
+    </div>
+    <button onclick="nextPage('page1','page2')">NEXT ➜</button>
+</div>
+
+<div id="page2" class="card hidden">
+    <h2>Happy Birthday My Favorite Person 💕</h2>
+    <img src="images/photo5.jpg" class="big-photo">
+    <p>
+        You are the most amazing person in my life.
+        Thank you for every memory and every smile.
+    </p>
+    <button onclick="nextPage('page2','cakePage')">NEXT ➜</button>
+</div>
+
+<div id="cakePage" class="card hidden">
+    <h2>Make a Wish 🎂</h2>
+    <div class="cake">
+        🕯️🕯️🕯️🕯️🕯️
+    </div>
+    <button onclick="blowCandles()">BLOW</button>
+</div>
+
+<div id="finalPage" class="card hidden">
+    <h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+    <p>Wishing you happiness, success and lots of love ❤️</p>
+</div>
+
+<audio id="music" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
