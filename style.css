@@ -1,0 +1,56 @@
+body{
+    background:black;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+.title{
+    color:#ffc94a;
+    margin-top:40px;
+}
+
+.card{
+    width:80%;
+    max-width:700px;
+    margin:30px auto;
+    background:#fff2cf;
+    color:black;
+    padding:20px;
+    border-radius:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.big-photo{
+    width:70%;
+    border-radius:15px;
+}
+
+button{
+    margin-top:15px;
+    background:#ff4fb4;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.cake{
+    font-size:60px;
+    margin:20px;
+}
